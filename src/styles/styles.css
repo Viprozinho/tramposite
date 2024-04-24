@@ -1,0 +1,13 @@
+div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+}
+
+footer {
+    background-color: white;
+}

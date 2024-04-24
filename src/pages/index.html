@@ -13,9 +13,6 @@
             margin: 0 auto;
             text-align: center;
         }
-
-        header,
-        footer,
         .hero,
         .events {
             text-align: left;
@@ -33,49 +30,35 @@
 
 <body background="../assets/Pedro_Américo_-_Independência_ou_Morte_-_Google_Art_Project.jpg">
     <header>
-        <h1>Galeria de Arte Online</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="login.html">login</a></li>
-                <li><a href="cadastro.html">cadastro</a></li>
-            </ul>
-        </nav>
+        <span>
+            <h1>Galeria de Arte Online</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="login.html">login</a>
+                <a href="cadastro.html">cadastro</a>
+            </nav>
+        </span>
     </header>
 
-    <h2>Áudio</h2>
-    <audio controls>
-        <source src="caminho_para_audio.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
+    <div>
+        <h2>Áudio</h2>
+        <audio controls>
+            <source src="caminho_para_audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
 
-    <h2>Vídeo</h2>
-    <video width="320" height="240" controls>
-        <source src="caminho_para_video.mp4" type="video/mp4">
-        Seu navegador não suporta o elemento de vídeo.
-    </video>
+        <h2>Vídeo</h2>
+        <video width="320" height="240" controls>
+            <source src="caminho_para_video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
 
-    <section class="hero">
-        <h2>Descubra a Beleza da Arte</h2>
-        <p>Explore nossa coleção de obras de arte excepcionais.</p>
-        <a href="gallery.html" class="button">Explorar a Galeria</a>
-    </section>
-
-    <section class="events">
-        <h2>Próximos Eventos</h2>
-        <ul>
-            <li>
-                <h3>Exposição de Verão</h3>
-                <p>Data: 15 de agosto de 2024</p>
-                <p>Local: Galeria de Arte Online</p>
-            </li>
-            <li>
-                <h3>Workshop de Pintura</h3>
-                <p>Data: 22 de setembro de 2024</p>
-                <p>Local: Galeria de Arte Online</p>
-            </li>
-        </ul>
-    </section>
+        <section class="hero">
+            <h2>Descubra a Beleza da Arte</h2>
+            <p>Explore nossa coleção de obras de arte excepcionais.</p>
+            <a href="gallery.html" class="button">Explorar a Galeria</a>
+        </section>
+    </div>
 
     <footer>
         <nav>

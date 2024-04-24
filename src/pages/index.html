@@ -7,11 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Arte Online - Página Inicial</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header,
+        footer,
+        .hero,
+        .events {
+            text-align: left;
+        }
+
+        img,
+        audio,
+        video,
+        form {
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Bem-vindo à Galeria de Arte Online</h1>
+        <h1>Galeria de Arte Online</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -20,6 +42,8 @@
                 <li><a href="gallery.html">Galeria</a></li>
                 <li><a href="about.html">Sobre</a></li>
                 <li><a href="contact.html">Contato</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="cadastro.html">cadastro</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +63,7 @@
         <source src="caminho_para_video.mp4" type="video/mp4">
         Seu navegador não suporta o elemento de vídeo.
     </video>
-    
+
     <h2>Formulário de Contato</h2>
     <form action="/submit_form" method="post">
         <label for="fname">Nome:</label><br>

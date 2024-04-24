@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="navigation">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artistas</a></li>
+                <li><a href="exhibitions.html">Exposições</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="cadastro.html">cadastro</a></li>
+            </ul>
+        </nav>
+        <span>
+            <a href="login.html">login</a>
+            <a href="cadastro.html">cadastro</a>
+        </span>
+    </header>
+
+    <div class="forms">
+        <h1>Login</h1>
+        <form method="post" onsubmit="handleLogin(event)">
+            <input type="text" id="username" placeholder="username" required>
+            <input id="password" type="password" placeholder="password" required>
+            <button value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

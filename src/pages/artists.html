@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artistas - Galeria de Arte Online</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../js/artists.js"></script>
 </head>
 
 <body>
@@ -23,39 +25,12 @@
                 <li><a href="cadastro.html">cadastro</a></li>
             </ul>
         </nav>
+    <form method="post" onsubmit="renderArtists(event)">
+        <input type="search" placeholder="Nome do artista:" id="search">
+        <button type="submit" value="Buscar">Buscar</button>
+    </form>
     </header>
     <section>
-        <h2>Artista 1</h2>
-        <img src="artista1.jpg" alt="Artista 1">
-        <p>Biografia do Artista 1...</p>
-        <h3>Obras</h3>
-        <ul>
-            <li>Obra 1</li>
-            <li>Obra 2</li>
-            <li>Obra 3</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Artista 2</h2>
-        <img src="artista2.jpg" alt="Artista 2">
-        <p>Biografia do Artista 2...</p>
-        <h3>Obras</h3>
-        <ul>
-            <li>Obra 1</li>
-            <li>Obra 2</li>
-            <li>Obra 3</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Artista 3</h2>
-        <img src="artista3.jpg" alt="Artista 3">
-        <p>Biografia do Artista 3...</p>
-        <h3>Obras</h3>
-        <ul>
-            <li>Obra 1</li>
-            <li>Obra 2</li>
-            <li>Obra 3</li>
-        </ul>
     </section>
     <footer>
         <p>&copy; 2024 Galeria de Arte Online. Todos os direitos reservados.</p>

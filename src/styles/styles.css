@@ -1,3 +1,6 @@
+body {
+    background-image: url("../assets/Pedro_Américo_-_Independência_ou_Morte_-_Google_Art_Project.jpg");
+}
 div {
     display: flex;
     flex-direction: column;

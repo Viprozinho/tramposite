@@ -7,17 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria de Arte Online - Página Inicial</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
+        /* styles.css */
+
+        /* Estilos globais */
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
-        .hero,
-        .events {
-            text-align: left;
+
+        /* Estilização do cabeçalho */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
         }
 
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        /* Estilização dos elementos de mídia */
         img,
         audio,
         video,
@@ -25,19 +48,82 @@
             margin: 20px auto;
             display: block;
         }
+
+        /* Estilização da seção hero */
+        .hero {
+            text-align: left;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilização do rodapé */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <span>
-            <h1>Galeria de Arte Online</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="login.html">login</a>
-                <a href="cadastro.html">cadastro</a>
-            </nav>
-        </span>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(8, 57, 102);">
+            <div class="container px-4">
+                <a class="navbar-brand" href="/">
+                    <span style="color:#ffffff; font-size:26px; font-weight:bold; letter-spacing: 1px;">EL MUSEUN</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Galeria</a></li>
+                        <li><a href="artists.html">Artistas</a></li>
+                        <li><a href="exhibitions.html">Exibicoes</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="about.html">Sobre</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="cadastro.html">Registre-se</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+            </script>
     </header>
 
     <div>
@@ -61,15 +147,20 @@
     </div>
 
     <footer>
-        <nav>
-            <ul>
-                <li><a href="artists.html">Artistas</a></li>
-                <li><a href="exhibitions.html">Exposições</a></li>
-                <li><a href="gallery.html">Galeria</a></li>
-                <li><a href="about.html">Sobre</a></li>
-                <li><a href="contact.html">Contato</a></li>
-            </ul>
-        </nav>
+        <ul class="wrapper">
+            <li class="icon facebook">
+                <span><i class="fab fa-facebook-f"></i></span>
+            </li>
+            <li class="icon youtube">
+                <span><i class="fab fa-youtube"></i></span>
+            </li>
+            <li class="icon tiktok">
+                <span><i class="fab fa-tiktok"></i></span>
+            </li>
+            <li class="icon instagram">
+                <span><i class="fab fa-instagram"></i></span>
+            </li>
+        </ul>
         <p>&copy; 2024 Galeria de Arte Online. Todos os direitos reservados.</p>
     </footer>
 </body>
